@@ -24,10 +24,6 @@ export default function Home() {
             console.log(order);
             await actions.order?.capture();
           }}
-          onCancel={(data, actions)=>{
-            console.log(data);
-            actions.redirect();
-          }}
         ></PayPalButtons>
       </PayPalScriptProvider>
     </main>
